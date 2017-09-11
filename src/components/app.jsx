@@ -12,11 +12,29 @@ class App extends Component{
             perPage: 5 
         } 
     }
+    
+    getUserData(){
+        $.ajax({
+            url: 'https://api.github.com/users/' + this.state.username + '?client_id=' + this.props.clientId + '&client_secret=' + this.props.clientSecret,
+            dataType: 'json',
+            cache: false,
+            success: function(data){
+                console.log(data);
+            }.bind(this),
+            error: function(xhr, status, err){
+                alert(err);
+            }.bind(this)
+         })
+    }
+
+    componentDidMount(){
+        this.getUserData();
+    }
      
     render(){
         return(
             <div>
-                My App
+                {this.props.clientId}
             </div>
         )
     }

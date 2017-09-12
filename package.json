@@ -18,11 +18,7 @@
     "url": "https:/webpack/github.com/kinny94/github-profile-viewer/issues"
   },
   "homepage": "https://github.com/kinny94/github-profile-viewer#readme",
-  "devDependencies": {
-    "babel-core": "5.8.*",
-    "babel-loader": "5.3.*",
-    "webpack": ""
-  },
+  "devDependencies": {},
   "dependencies": {
     "express": "^4.15.4",
     "react": "^0.14.7",

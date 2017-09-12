@@ -20,6 +20,7 @@
   "homepage": "https://github.com/kinny94/github-profile-viewer#readme",
   "devDependencies": {},
   "dependencies": {
+    "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "express": "^4.15.4",
     "react": "^0.14.7",

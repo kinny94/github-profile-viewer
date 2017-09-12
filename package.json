@@ -4,7 +4,12 @@
 	"description": "Get Github user's info",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "webpack-dev-server",
+		"build": "webpack",
+		"predeploy": "react-scripts build",
+		"deploy": "aws cp build s3://my-s3-bucket --recursive",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject"
 	},
 	"repository": {
 		"type": "git",

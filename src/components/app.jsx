@@ -32,7 +32,7 @@ class App extends Component{
                 });
                 alert(err);
             }.bind(this)
-         })
+         });
     }
 
     getUserRepos(){
@@ -51,7 +51,7 @@ class App extends Component{
                 });
                 alert(err);
             }.bind(this)
-         })
+        });
     }
 
     handleformSubmit(username){
